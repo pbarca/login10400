@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A minha página SQLite3</title>
+    <!-- Load an icon library -->
+    <link rel="shortcut icon" href="static/favicon.png">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+
+<div class="navbar">
+    <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="/login"><i class="fa fa-fw fa-lock"></i> Entrar</a>
+    <a href="/registo"><i class="fa fa-fw fa-user"></i> Registo</a>
+    <a href="/newpass"><i class="fa fa-fw fa-recycle"></i> Alterar Passe</a>
+    <a href="/apagar"><i class="fa fa-fw fa-recycle"></i> Eliminar Conta</a>
+</div>
+
+{% block body %}
+{% endblock %}
+
+<h4>&copy; 2019 Paulo Côto</h4>
+</body>
+</html>
