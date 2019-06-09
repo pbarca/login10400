@@ -9,7 +9,7 @@ def herokudb():
     Database = 'dc2a08o9htumor'
     User = 'gdsgmkwokjvdiw'
     Password = '00b7fdc9304e7fdd19305955324e6e029cd6a3821e3131aae973d7d7a8168d1b'
-    return psycopg2.connect( host=Host, database=Database, user=User, password=Password)
+    return psycopg2.connect(host=Host, database=Database, user=User, password=Password)
 
 
 def gravar(v1, v2):
@@ -86,7 +86,7 @@ def registo():
         v2 = request.form['pwd']
         v3 = request.form['cpwd']
         if existe(v1):
-                erro = 'O Utilizador já existe.'
+            erro = 'O Utilizador já existe.'
         elif v2 != v3:
             erro = 'A palavra passe não coincide.'
         else:
